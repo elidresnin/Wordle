@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+//import library needed
+import FirebaseAuth
 
 struct SignUpView: View {
     @EnvironmentObject var user: User
@@ -36,7 +38,7 @@ struct SignUpView: View {
                         .foregroundColor(Color.wordleGrey)
                         .frame(width: 300, height: 65)
                         .cornerRadius(25)
-                    TextField("password", text: $user.password)
+                    SecureField("password", text: $user.password)
                         .multilineTextAlignment(.center)
                 }
                 Spacer()
@@ -58,7 +60,9 @@ struct SignUpView: View {
                 
                 ZStack{
                     Button {
-                        
+                        Auth.auth().createUser(withEmail: user.email, password: user.password){user, error in
+                            
+                        }
                     } label: {
                         ZStack{
                             
@@ -75,7 +79,7 @@ struct SignUpView: View {
                 }
                 Spacer()
             }
-        }
+        }.padding()
     }
 }
 
