@@ -11,6 +11,7 @@ import FirebaseAuth
 
 struct SignUpView: View {
     @EnvironmentObject var user: User
+    @State var forgotPassword: Bool = false
     var body: some View {
         ZStack{
             Rectangle()
@@ -42,14 +43,27 @@ struct SignUpView: View {
                         .multilineTextAlignment(.center)
                 }
                 Spacer()
-                
+                Button {
+                    Auth.auth().sendPasswordReset(withEmail: <#T##String#>) {
+                       _ in
+                        forgotPassword.toggle()
+                    }
+                    
+                    
+                } label: {
+                    Text("Forgot Password?")
+                        .font(Constants.smallFont)
+                        .opacity(!forgotPassword ? 0 : 1)
+                        .disabled(!forgotPassword ? true : false)
+                }
                 Button {
                     Auth.auth().signIn(withEmail: user.email, password: user.password) {user, error in
-                        if let u = user {
+                        if let _ = user {
                             self.user.loggedIn = true
                             print("login success")
                         }
                         else if let e = error {
+                            self.forgotPassword = true
                             print(e.localizedDescription)
                         }
                     }
@@ -65,12 +79,11 @@ struct SignUpView: View {
                     }
                 }
                 
-                
                 ZStack{
                     Button {
                         //firebase singleton, will always have trailing closure as last parameter
                         Auth.auth().createUser(withEmail: user.email, password: user.password){user, error in
-                            if let u = user {
+                            if let _ = user {
                                 self.user.loggedIn = true
                                 print("sign up success")
                                 
