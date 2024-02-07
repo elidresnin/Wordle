@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AFE3A027A9BD174C0FE65C0C /* Pods_Wordle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5061229F330612DA59F64B59 /* Pods_Wordle.framework */; };
+		D00AD1A12B740E3800DB3472 /* WordleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AD1A02B740E3800DB3472 /* WordleView.swift */; };
 		D08DBC492B714A0100B9CFB2 /* WordleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08DBC482B714A0100B9CFB2 /* WordleApp.swift */; };
 		D08DBC4B2B714A0100B9CFB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08DBC4A2B714A0100B9CFB2 /* ContentView.swift */; };
 		D08DBC4D2B714A0300B9CFB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08DBC4C2B714A0300B9CFB2 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		5061229F330612DA59F64B59 /* Pods_Wordle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wordle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DFFD7F7A5BE27F0B5BAFBBD /* Pods-Wordle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wordle.release.xcconfig"; path = "Target Support Files/Pods-Wordle/Pods-Wordle.release.xcconfig"; sourceTree = "<group>"; };
+		D00AD1A02B740E3800DB3472 /* WordleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleView.swift; sourceTree = "<group>"; };
 		D08DBC452B714A0100B9CFB2 /* Wordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08DBC482B714A0100B9CFB2 /* WordleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleApp.swift; sourceTree = "<group>"; };
 		D08DBC4A2B714A0100B9CFB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				D08DBC4A2B714A0100B9CFB2 /* ContentView.swift */,
 				D095E2712B71539400DD546C /* SignUpView.swift */,
+				D00AD1A02B740E3800DB3472 /* WordleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				D095E2742B7153DF00DD546C /* Constants.swift in Sources */,
 				D08DBC4B2B714A0100B9CFB2 /* ContentView.swift in Sources */,
 				D095E26E2B71521100DD546C /* User.swift in Sources */,
+				D00AD1A12B740E3800DB3472 /* WordleView.swift in Sources */,
 				D095E2722B71539400DD546C /* SignUpView.swift in Sources */,
 				D08DBC492B714A0100B9CFB2 /* WordleApp.swift in Sources */,
 			);

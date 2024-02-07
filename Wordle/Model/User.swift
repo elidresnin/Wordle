@@ -12,11 +12,13 @@ class User: ObservableObject{
     @Published var password: String
     @Published var name: String
     @Published var image: String
+    @Published var loggedIn: Bool
     
-    init(email: String = "", password: String = "", name: String = "", image: String = "") {
+    init(email: String = "", password: String = "", name: String = "", image: String = "", loggedIn: Bool = false) {
         self.email = email
         self.password = password
         self.name = name
         self.image = image
+        self.loggedIn = loggedIn
     }
 }

@@ -27,7 +27,7 @@ struct WordleApp: App {
     @StateObject var user: User = User()
     var body: some Scene {
         WindowGroup {
-            SignUpView()
+            ContentView()
                 .environmentObject(User())
         }
     }

@@ -44,7 +44,15 @@ struct SignUpView: View {
                 Spacer()
                 
                 Button {
-                    
+                    Auth.auth().signIn(withEmail: user.email, password: user.password) {user, error in
+                        if let u = user {
+                            self.user.loggedIn = true
+                            print("login success")
+                        }
+                        else if let e = error {
+                            print(e.localizedDescription)
+                        }
+                    }
                 } label: {
                     ZStack{
                         
@@ -52,7 +60,7 @@ struct SignUpView: View {
                             .foregroundColor(Color.wordleYellow)
                             .frame(width: 300, height: 65)
                             .cornerRadius(25)
-                        Text("Login")
+                        Text("Log In")
                             .font(Constants.smallFont)
                     }
                 }
@@ -60,8 +68,16 @@ struct SignUpView: View {
                 
                 ZStack{
                     Button {
+                        //firebase singleton, will always have trailing closure as last parameter
                         Auth.auth().createUser(withEmail: user.email, password: user.password){user, error in
-                            
+                            if let u = user {
+                                self.user.loggedIn = true
+                                print("sign up success")
+                                
+                            }
+                            else if let e = error {
+                                print(e.localizedDescription)
+                            }
                         }
                     } label: {
                         ZStack{
