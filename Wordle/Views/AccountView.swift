@@ -25,6 +25,11 @@ struct AccountView: View {
             TextField("name", text: $user.name)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+                .onSubmit {
+                    guard let uid = Auth.auth().currentUser?.uid else {return}
+                    Database.database().reference().child("users/\(uid)/name")
+                        .setValue(user.name)
+                }
             TextField("win percentage", text: $user.win)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
