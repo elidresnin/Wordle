@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/s018305/Desktop/CompSci/xCode/Wordle/Wordle/Model/ImagePicker.swift">
+   </FileRef>
+   <FileRef
       location = "group:Wordle.xcodeproj">
    </FileRef>
    <FileRef

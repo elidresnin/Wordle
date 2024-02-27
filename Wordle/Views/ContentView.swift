@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             if user.loggedIn  {
-                WordleView()
+                AccountView()
             }
             else{
                 SignUpView()

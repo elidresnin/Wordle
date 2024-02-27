@@ -44,7 +44,7 @@ struct SignUpView: View {
                 }
                 Spacer()
                 Button {
-                    Auth.auth().sendPasswordReset(withEmail: <#T##String#>) {
+                    Auth.auth().sendPasswordReset(withEmail: user.email) {
                        _ in
                         forgotPassword.toggle()
                     }
