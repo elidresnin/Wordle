@@ -14,7 +14,7 @@
 		D08DBC4B2B714A0100B9CFB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08DBC4A2B714A0100B9CFB2 /* ContentView.swift */; };
 		D08DBC4D2B714A0300B9CFB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08DBC4C2B714A0300B9CFB2 /* Assets.xcassets */; };
 		D08DBC502B714A0300B9CFB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08DBC4F2B714A0300B9CFB2 /* Preview Assets.xcassets */; };
-		D09052DF2B8E5A7A001A688C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09052DE2B8E5A7A001A688C /* ImagePicker.swift */; };
+		D08E25522B8E72030033E650 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08E25512B8E72020033E650 /* ImagePicker.swift */; };
 		D095E26C2B714D8D00DD546C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D095E26B2B714D8D00DD546C /* GoogleService-Info.plist */; };
 		D095E26E2B71521100DD546C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D095E26D2B71521100DD546C /* User.swift */; };
 		D095E2722B71539400DD546C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D095E2712B71539400DD546C /* SignUpView.swift */; };
@@ -31,7 +31,7 @@
 		D08DBC4A2B714A0100B9CFB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D08DBC4C2B714A0300B9CFB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D08DBC4F2B714A0300B9CFB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D09052DE2B8E5A7A001A688C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = /Users/s018305/Desktop/CompSci/xCode/Wordle/Wordle/Model/ImagePicker.swift; sourceTree = "<absolute>"; };
+		D08E25512B8E72020033E650 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		D095E26B2B714D8D00DD546C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D095E26D2B71521100DD546C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D095E2712B71539400DD546C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		D095E26F2B71524200DD546C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D09052DE2B8E5A7A001A688C /* ImagePicker.swift */,
+				D08E25512B8E72020033E650 /* ImagePicker.swift */,
 				D095E26D2B71521100DD546C /* User.swift */,
 				D095E2732B7153DF00DD546C /* Constants.swift */,
 			);
@@ -246,9 +246,9 @@
 				D095E2742B7153DF00DD546C /* Constants.swift in Sources */,
 				D08DBC4B2B714A0100B9CFB2 /* ContentView.swift in Sources */,
 				D095E26E2B71521100DD546C /* User.swift in Sources */,
-				D09052DF2B8E5A7A001A688C /* ImagePicker.swift in Sources */,
 				D056F0EB2B8E5BD000016080 /* AccountView.swift in Sources */,
 				D00AD1A12B740E3800DB3472 /* WordleView.swift in Sources */,
+				D08E25522B8E72030033E650 /* ImagePicker.swift in Sources */,
 				D095E2722B71539400DD546C /* SignUpView.swift in Sources */,
 				D08DBC492B714A0100B9CFB2 /* WordleApp.swift in Sources */,
 			);
