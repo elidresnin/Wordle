@@ -30,9 +30,10 @@ struct AccountView: View {
                     Database.database().reference().child("users/\(uid)/name")
                         .setValue(user.name)
                 }
-            TextField("win percentage", text: $user.win)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+//            TextField("win percentage", text: )
+//                .textFieldStyle(RoundedBorderTextFieldStyle())
+//                .padding()
+            
             Button{
                 showSheet.toggle()
             }label:{
